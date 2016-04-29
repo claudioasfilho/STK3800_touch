@@ -33,7 +33,7 @@ all: STK3800_touch.axf
 STK3800_touch.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU ARM C Linker'
-	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m4 -mthumb -T "STK3800_touch.ld" -Xlinker --gc-sections -Xlinker -Map="STK3800_touch.map" -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --specs=nano.specs -o STK3800_touch.axf "./src/touchdemo.o" "./emlib/em_acmp.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_int.o" "./emlib/em_lcd.o" "./emlib/em_lesense.o" "./emlib/em_rtc.o" "./emlib/em_system.o" "./emlib/em_vcmp.o" "./Drivers/caplesense.o" "./Drivers/em_usart.o" "./Drivers/retargetserial.o" "./Drivers/rtcdriver.o" "./Drivers/segmentlcd.o" "./Drivers/vddcheck.o" "./CMSIS/efm32wg/startup_efm32wg.o" "./CMSIS/efm32wg/system_efm32wg.o" "./BSP/bsp_trace.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m4 -mthumb -T "STK3800_touch.ld" -Xlinker --gc-sections -Xlinker -Map="STK3800_touch.map" -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --specs=nano.specs -o STK3800_touch.axf "./src/retargetvirtual.o" "./src/touchdemo.o" "./emlib/em_acmp.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_int.o" "./emlib/em_lcd.o" "./emlib/em_lesense.o" "./emlib/em_rtc.o" "./emlib/em_system.o" "./emlib/em_vcmp.o" "./Drivers/caplesense.o" "./Drivers/em_usart.o" "./Drivers/rtcdriver.o" "./Drivers/segmentlcd.o" "./Drivers/vddcheck.o" "./CMSIS/efm32wg/startup_efm32wg.o" "./CMSIS/efm32wg/system_efm32wg.o" "./BSP/bsp_trace.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

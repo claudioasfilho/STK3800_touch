@@ -41,16 +41,6 @@
 			<locationURI>PARENT-5-PROJECT_LOC/SiliconLabs/SimplicityStudio/v3/developer/sdks/efm32/v2/emlib/src/em_usart.c</locationURI>
 		</link>
 		<link>
-			<name>Drivers/retargetserial.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/SiliconLabs/SimplicityStudio/v3/developer/sdks/efm32/v2/kits/common/drivers/retargetserial.c</locationURI>
-		</link>
-		<link>
-			<name>Drivers/retargetserial.h</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/SiliconLabs/SimplicityStudio/v3/developer/sdks/efm32/v2/kits/common/drivers/retargetserial.h</locationURI>
-		</link>
-		<link>
 			<name>Drivers/rtcdriver.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/emdrv/rtcdrv/src/rtcdriver.c</locationURI>
